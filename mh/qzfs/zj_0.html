@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>预告I</title>
+		<meta charset="utf-8" />
+		<style>
+			img{
+				display: block;
+			}
+		</style>
+	</head>
+	<body style="font-size:50pt">
+		<p>
+			<img id="i1"/>
+			<img id="i2"/>
+			<img id="i3"/>
+			<img id="i4"/>
+			<img id="i5"/>
+			<img id="i6"/>
+			<img id="i7"/>
+		</p>
+		<a id="att" href="https://m.36mh.com/manhua/quanzhifashi/"/>
+		<p/>
+		<a id="att2"/>
+		<script>
+			if (localStorage.getItem("MF") == "MF") {
+				window.localStorage.removeItem("MF");
+				document.getElementById("i1").src ="https://img001.yayxcc.com/images/comic/2/3697/15204498074Smk7Rj0IQ6kckCV.jpg"
+				document.getElementById("i2").src ="https://img001.yayxcc.com/images/comic/2/3697/1520449807tsmlSdU6koBzs9cg.jpg"
+				document.getElementById("i3").src ="https://img001.yayxcc.com/images/comic/2/3697/15204498072o88HlOH4lM41EJx.jpg"
+				document.getElementById("i4").src ="https://img001.yayxcc.com/images/comic/2/3697/1520449808zWrdXkxaNk4P6rRz.jpg"
+				document.getElementById("i5").src ="https://img001.yayxcc.com/images/comic/2/3697/1520449808H1aoQSgR3WvR6KnF.jpg"
+				document.getElementById("i6").src ="https://img001.yayxcc.com/images/comic/2/3697/15204498081TTZ5tdA4ZiUk4X2.jpg"
+				document.getElementById("i7").src ="https://img001.yayxcc.com/images/comic/2/3697/1520449809SlV1t7OgEjYhFdkA.jpg"
+				document.getElementById("att").text ="本页内容均来自此网页";
+				document.getElementById("att2").text ="后排提示，请注意流量消耗"
+			} else {
+				window.location.href = "https://jq.qq.com/?_wv=1027&k=58YytEX"
+			}
+		</script>
+
+	</body>
+</html>

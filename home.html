@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			//?name=qzfs_36&zj=mh_01
+			var this_url = window.location.href;
+			var datas=this_url.split("?")[1].split("&");
+			var change_name=datas[0].split("=")[1];
+			var change_zj=datas[1].split("=")[1];
+			var change_url="mh/"+change_name+"/"+change_zj;
+			window.localStorage.setItem("MF", "MF");
+			window.location.href=change_url;
+		</script>
+	</body>
+
+</html>
