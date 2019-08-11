@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>预告II</title>
+		<meta charset="utf-8" />
+		<style>
+			img{
+				display: block;
+			}
+		</style>
+	</head>
+	<body style="font-size:50pt">
+		<p>
+			<img id="i1"/>
+			<img id="i2"/>
+			<img id="i3"/>
+			<img id="i4"/>
+			<img id="i5"/>
+		</p>
+		<a id="att" href="https://m.36mh.com/manhua/quanzhifashi/"/>
+		<p/>
+		<a id="att2"/>
+		<script>
+			if (localStorage.getItem("MF") == "MF") {
+				window.localStorage.removeItem("MF");
+				document.getElementById("i1").src ="https://img001.yayxcc.com/images/comic/2/3698/1520449809Avaw0hTbE7At_F1V.jpg"
+				document.getElementById("i2").src ="https://img001.yayxcc.com/images/comic/2/3698/1520449809OkhmVGdYlllBsZJn.jpg"
+				document.getElementById("i3").src ="https://img001.yayxcc.com/images/comic/2/3698/1520449810r6qyOwxGJwCa0G_S.jpg"
+				document.getElementById("i4").src ="https://img001.yayxcc.com/images/comic/2/3698/1520449810nHuByRDnTUrCtKTD.jpg"
+				document.getElementById("i5").src ="https://img001.yayxcc.com/images/comic/2/3698/1520449810mUXyjIKUbHLjgXI3.jpg"
+				document.getElementById("att").text ="本页内容均来自此网页";
+				document.getElementById("att2").text ="后排提示，请注意流量消耗"
+			} else {
+				window.location.href = "https://jq.qq.com/?_wv=1027&k=58YytEX"
+			}
+		</script>
+
+	</body>
+</html>
