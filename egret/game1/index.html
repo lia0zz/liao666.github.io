@@ -59,7 +59,7 @@
 
     var loadSingleScript = function (src, callback) {
         var s = document.createElement('script');
-        s.async = false;
+        s.async = true;
         s.src = src;
         s.addEventListener('load', function () {
             s.parentNode.removeChild(s);
