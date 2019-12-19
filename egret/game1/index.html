@@ -37,7 +37,8 @@
     </div>
 <script>
     
-    console.log("Start");
+    console.log("Start1");
+    document.write("<h1>加载中</h1>");
     var loadScript = function (list, callback) {
         var loaded = 0;
         var loadNext = function () {
@@ -45,9 +46,11 @@
                 loaded++;
                 if (loaded >= list.length) {
                     callback();
+                    console.log("callback");
                 }
                 else {
                     loadNext();
+                    console.log("loadNext");
                 }
             })
         };
@@ -64,6 +67,7 @@
             callback();
         }, false);
         document.body.appendChild(s);
+        console.log("loadSingleScript");
     };
 
     var xhr = new XMLHttpRequest();
@@ -90,7 +94,9 @@
                 return (window.devicePixelRatio || 1) / backingStore;
             }});
         });
-    });
+    }
+                        console.log("XHR1");
+                        );
     xhr.send(null);
     
     console.log("Over");
